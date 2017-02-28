@@ -25,7 +25,7 @@ Route::get('changeStatus/{id}','orderViewController@change');
 
 Route::get('/insertAdmin', 'adminInsertController@index');
 Route::post('/createAdmin', 'adminInsertController@insert');
-Route::get('/adminSetting', 'adminUpdateController@setting');
+Route::get('adminSetting', 'adminUpdateController@setting');
 
 
 Route::get('viewAdmin-records','adminViewController@index');

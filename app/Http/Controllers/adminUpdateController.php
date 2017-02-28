@@ -27,6 +27,7 @@ class adminUpdateController extends Controller
    }
    public function edit(Request $request,$id) {
       $email=$request->session()->get('email');
+      //$id = $request->input('id');
       $name = $request->input('name');
       $email = $request->input('email');
       $pass = $request->input('password');

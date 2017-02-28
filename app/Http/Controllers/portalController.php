@@ -26,15 +26,15 @@ class portalController extends Controller
     	$email=$_POST['email'];
     	$password=$_POST['password'];
         
-    	$data = DB::select("select * from admin where email='$email'");
+    	$data = DB::select("select * from admins where email='$email'");
     	if(empty($data)){
             return view('login');
         }else{
-
-        $dbEmail=$data[0]->email;
-    	$dbPass=$data[0]->password;
-        $name=$data[0]->name;
-        $id=$data[0]->id;
+            
+            $dbEmail=$data[0]->email;
+    	    $dbPass=$data[0]->password;
+            //$name=$data[0]->name;
+            //$id=$data[0]->id;
         
     	   if($email==$dbEmail && $password==$dbPass){
     		$request->session()->put('email',"$dbEmail");

@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/portal">Proprio.pk</a>
+            <a class="navbar-brand" href="{{url('portal')}}">Proprio.pk</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -23,12 +23,12 @@
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="#"><i class="fa fa-user fa-fw"></i>{{$email}}</a>
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> {{$email}}</a>
                     </li>
-                    <li><a href="adminSetting"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="{{url('adminSetting')}}"><i class="fa fa-gear fa-fw"></i> Settings</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    <li><a href="{{url('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
                 </ul>
                 <!-- /.dropdown-user -->
@@ -42,30 +42,30 @@
                 <ul class="nav" id="side-menu">
                     
                     <li>
-                        <a href="portal"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="{{url('portal')}}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     
                     <li>
-                        <a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Orders<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Orders<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/insert"><i class="fa fa-plus-square fa-fw"></i> Add Orders</a>
+                                <a href="{{url('insert')}}">Add Orders</a>
                             </li>
                             <li>
-                                <a href="/view-records"><i class="fa fa-eye fa-fw"></i> View Orders</a>
+                                <a href="{{url('view-records')}}">View Orders</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
                     
                     <li>
-                        <a href="#"><i class="fa fa-user fa-fw"></i> Admin<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-files-o fa-fw"></i> Admin<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/insertAdmin"><i class="fa fa-plus-square fa-fw"></i> Add Admin</a>
+                                <a href="{{url('insertAdmin')}}">Add Admin</a>
                             </li>
                             <li>
-                                <a href="/viewAdmin-records"><i class="fa fa-eye fa-fw"></i> View Admin</a>
+                                <a href="{{url('viewAdmin-records')}}">View Admin</a>
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->
@@ -76,7 +76,7 @@
         </div>
         <!-- /.navbar-static-side -->
     </nav>
-
+    
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">

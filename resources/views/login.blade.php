@@ -8,7 +8,7 @@
                     <h3 class="panel-title">Please Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form role="form" id="login" method="POST" action="/portal">
+                    <form role="form" id="login" method="POST" action="{{url('portal')}}">
                          {{ csrf_field() }}
                         <fieldset>
                             <div class="form-group">
